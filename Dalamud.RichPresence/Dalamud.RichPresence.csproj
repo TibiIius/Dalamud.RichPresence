@@ -40,6 +40,32 @@
         <DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
+      <DalamudLibPath>$(DALAMUD_HOME)/</DalamudLibPath>
+      <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    </PropertyGroup>
+
+    <Target Name="DownloadWineDiscordIpcBridge" BeforeTargets="Build">
+        <DownloadFile
+            SourceUrl="https://github.com/0e4ef622/wine-discord-ipc-bridge/releases/latest/download/winediscordipcbridge.exe"
+            DestinationFolder="$(ProjectDir)binaries" 
+            DestinationFileName="WineLinuxRPCBridge.exe" 
+            Condition="!Exists('$(ProjectDir)binaries\WineLinuxRPCBridge.exe')"
+        />
+        <DownloadFile
+            SourceUrl="https://raw.githubusercontent.com/0e4ef622/wine-discord-ipc-bridge/master/LICENSE"
+            DestinationFolder="$(ProjectDir)binaries"
+            DestinationFileName="WineLinuxRPCBridgeLicense.txt"
+            Condition="!Exists('$(ProjectDir)binaries\WineLinuxRPCBridgeLicense.txt')"
+        />
+    </Target>
+
+    <ItemGroup>
+        <None Update="binaries/**">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
     <ItemGroup>
         <Reference Include="FFXIVClientStructs">
             <HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
