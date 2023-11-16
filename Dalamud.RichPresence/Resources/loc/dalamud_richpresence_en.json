@@ -103,6 +103,10 @@
     "message": "Show away from keyboard status",
     "description": "Dalamud.RichPresence.Configuration.ShowAFK"
   },
+  "DalamudRichPresenceHideAFKEntirely": {
+    "message": "Hide rich presence status entirely when AFK",
+    "description": "Dalamud.RichPresence.Configuration.HideEntirelyWhenAfk"
+  },
   "DalamudRichPresenceRPCBridgeEnabled": {
     "message": "Enable RPC Bridge",
     "description": "Dalamud.RichPresence.Configuration.RPCBridgeEnabled"

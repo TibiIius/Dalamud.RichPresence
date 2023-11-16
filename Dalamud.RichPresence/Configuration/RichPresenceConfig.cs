@@ -30,6 +30,7 @@ namespace Dalamud.RichPresence.Configuration
         public bool ShowParty = true;
 
         public bool ShowAfk = true;
+        public bool HideEntirelyWhenAfk = false;
 
         // RPC Bridge for Wine.
         public bool RPCBridgeEnabled = true;
