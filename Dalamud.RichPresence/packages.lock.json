@@ -1,21 +1,21 @@
 {
   "version": 1,
   "dependencies": {
-    "net5.0-windows7.0": {
+    "net7.0-windows7.0": {
       "DalamudPackager": {
         "type": "Direct",
-        "requested": "[2.1.7, )",
-        "resolved": "2.1.7",
-        "contentHash": "jnZ/sdInyn07ycuWI+pPOtP/xE3v+c4+jYJfDt36FWnBF9NKqkpzfviJtPl/jGLgbaCmFIXu+Yid0N8GvdKefg=="
+        "requested": "[2.1.10, )",
+        "resolved": "2.1.10",
+        "contentHash": "S6NrvvOnLgT4GDdgwuKVJjbFo+8ZEj+JsEYk9ojjOR/MMfv1dIFpT8aRJQfI24rtDcw1uF+GnSSMN4WW1yt7fw=="
       },
       "DiscordRichPresence": {
         "type": "Direct",
-        "requested": "[1.0.175, )",
-        "resolved": "1.0.175",
-        "contentHash": "qSWobPTbvHh9gOoBYT8C8eUhKtVdBI/WvW7GY9lNMEtsZIpL6nxCvYJwjsGL3dqlEAGY5k0vdq+wnuDLVBSV2w==",
+        "requested": "[1.1.3.18, )",
+        "resolved": "1.1.3.18",
+        "contentHash": "cu8ilTx4DPuU3YJO1bNF+UtTlVvQIihvJ7AwoRKkcy9+cZ+fUxKfQsMpEcfm3PndT3zExpljPbS9wMdbLeYdAg==",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.5.0",
-          "Newtonsoft.Json": "12.0.2"
+          "Newtonsoft.Json": "13.0.1"
         }
       },
       "Microsoft.Win32.Registry": {
@@ -30,18 +30,12 @@
       },
       "NCalcSync": {
         "type": "Direct",
-        "requested": "[2.0.0, )",
-        "resolved": "2.0.0",
-        "contentHash": "kTGfqfxTGFtu5PYJpYQFPA/+uWeSFdsfBRt5FHBObWF0jNcPhQgfGT53nyXyrl+o4A492HDyBN62tGkE4pC+cQ==",
+        "requested": "[3.6.0, )",
+        "resolved": "3.6.0",
+        "contentHash": "r1u1/agxnOKc6vve/yqL+8GYmCtBc4nwRgqR4Kq6SoXPAAcloCw2Uap7CXdVOg+uHqNO3tJUqzhcsOFLnnMMxw==",
         "dependencies": {
           "Antlr3.Runtime": "3.5.1"
         }
-      },
-      "Newtonsoft.Json": {
-        "type": "Direct",
-        "requested": "[13.0.1, )",
-        "resolved": "13.0.1",
-        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
       },
       "StyleCop.Analyzers": {
         "type": "Direct",
@@ -51,12 +45,6 @@
         "dependencies": {
           "StyleCop.Analyzers.Unstable": "1.2.0.333"
         }
-      },
-      "XivCommon": {
-        "type": "Direct",
-        "requested": "[4.0.0-alpha.2, )",
-        "resolved": "4.0.0-alpha.2",
-        "contentHash": "ugdPMg3LKEWDY3DvdcfctjDW8QTaRnXfKJ9gFlY8036LVQ6guOG3grG65EIkIKIhbyg3b2E2ZWOhgeLYEcS00w=="
       },
       "Antlr3.Runtime": {
         "type": "Transitive",
@@ -136,6 +124,11 @@
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11"
         }
+      },
+      "Newtonsoft.Json": {
+        "type": "Transitive",
+        "resolved": "13.0.1",
+        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
       },
       "runtime.native.System": {
         "type": "Transitive",
